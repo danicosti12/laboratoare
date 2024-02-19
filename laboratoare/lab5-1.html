@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular comanda</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr><th colspan="2">MENIU</th></tr>
+    <tr><td>Numele:</td><td><input type="text" name="numele"></td></tr>
+    <tr><td>Prenumele:</td><td><input type="text" name="prenumele"></td></tr>
+    <tr><td>Telefonul:</td><td><input type="tel" name="telefonul"></td></tr>
+    <tr><th colspan="2">Alegeți pizza:</th></tr> 
+    <tr><td colspan="2">
+      <select name="pizza">
+        <option value="cu ciuperci">cu ciuperci</option>
+        <option value="mexicana">mexicana</option>
+        <option value="europeana">europeana</option>
+      </select>
+    </td></tr>
+    <tr><th colspan="2">Alegeți plata:</th></tr>
+    <tr><td colspan="2">
+      <input type="radio" name="plata" value="cash">cash
+      <input type="radio" name="plata" value="card">card
+    </td></tr>
+    <tr><th colspan="2">Comentarii:</th></tr>
+    <tr><td colspan="2"><textarea name="comentarii"></textarea></td></tr>
+</table>
+
+</body>
+</html>
